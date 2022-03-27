@@ -9,6 +9,9 @@ CUDA_VISIBLE_DEVICES=0,1 python test.py --pretrained_model_path /ResNet101-preta
 
 End to end train:
 ```shell
+#  Preprocess data
+python split_data.py
+
 #  Train
 CUDA_VISIBLE_DEVICES=0,1 python train.py
 
